@@ -7,8 +7,10 @@
         display: grid;
         flex-direction: column;
         align-items: center;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         margin-bottom: 70px;
+        margin-top: 30px;
+        grid-gap: 30px;
     }
 
     .title {
@@ -77,6 +79,9 @@
             .back {
                 grid-gap: 15px;
             }
+            .recently {
+                grid-gap: 15px;
+            }
             .future {
                 grid-gap: 15px;
             }
@@ -97,6 +102,9 @@
 
             &:last-child {
                 text-align: center;
+            }
+            .each-list {
+                line-height: 1.5;
             }
         }
 
@@ -134,14 +142,19 @@
             <li>MongoDB</li>
         </ul>
     </div>
+    <div class="wrapper recently">
+        <p>Recently learned</p>
+        <ul class="tech_list">
+            <li class="each-list">GraphQL Apollo Client</li>
+            <li class="each-list">GraphQL Apollo Server</li>
+        </ul>
+    </div>
     <div class="wrapper future">
         <p>I'm going to learn in near future</p>
         <ul class="tech_list">
-            <li>GraphQL</li>
             <li>TypeScript</li>
-            <li>PHP</li>
+            <li>NextJS</li>
             <li>MySQL</li>
-            <li>Vue</li>
         </ul>
     </div>
 </section>
